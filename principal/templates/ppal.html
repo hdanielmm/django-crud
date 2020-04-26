@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Contacts{% endblock title %}</title>
+</head>
+<body>
+  {% block body %}
+  <h1>Template principal</h1>
+
+  <table>
+    
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Apellido</th>
+        <th>Email</th>
+        <th>Opción</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for persona in object_list %}
+      <tr>
+        <td>{{ persona.id }}</td>
+        <td>{{ persona.nombre }}</td>
+        <td>{{ persona.apellido }}</td>
+        <td>{{ persona.correo }}</td>
+        <td>
+          <a href="{% url 'delete_person' persona.id %}">Eliminar</a>
+          <a href="{% url 'edit_person' persona.id %}">Editar</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+
+  </table>
+  <h3><a href="{% url 'create_person' %}">Crear</a></h3>
+  {% endblock body %}
+</body>
+</html>

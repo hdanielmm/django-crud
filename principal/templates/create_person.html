@@ -1,0 +1,14 @@
+{% extends 'ppal.html' %}
+{% block title %} Create person {% endblock title %}
+{% block body %}
+
+  <form method="post">
+    {% csrf_token %}
+    
+    <!-- {{ form_from_context.as_p }} -->
+    {{ form.as_p }}
+    
+    <button type="submit">Crear o Editar</button>
+  </form>
+
+{% endblock body %}
