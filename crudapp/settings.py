@@ -25,7 +25,7 @@ SECRET_KEY = '1^3fmu!=)$ogg(3#+i95j^$rv73)zuxz6xptd=f5($^rbw3ib5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'hdmdjangosimplecrud.herokuapp.com']
+ALLOWED_HOSTS = ['hdmdjangosimplecrud.herokuapp.com']
 
 
 # Application definition
