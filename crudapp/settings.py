@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'crudapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'mydb',
-        'USER': 'myuser',
-        'PASSWORD': 'mypass',
-        'HOST': 'localhost',
+        'NAME': 'd9r3v6ttqtcto',
+        'USER': 'dtyanglzpuxsgm',
+        'PASSWORD': '6ed92243adbe1e23c76970cb84d88450fc467dd3d63a8995e74d8d0beccd073d',
+        'HOST': 'ec2-3-211-48-92.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
